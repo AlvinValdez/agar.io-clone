@@ -325,9 +325,10 @@ function drawFood(food) {
 }
 
 function drawVirus(virus) {
-    graph.strokeStyle = virus.stroke;
-    graph.fillStyle = virus.fill;
+    graph.strokeStyle = "black";
+    graph.fillStyle = "black";
     graph.lineWidth = virus.strokeWidth;
+    
     drawCircle(virus.x - player.x + global.screenWidth / 2,
                virus.y - player.y + global.screenHeight / 2,
                virus.radius, global.virusSides);
